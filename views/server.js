@@ -17,3 +17,6 @@ app.set('view engine', 'handlebars');
 
 var port = 8080;
 app.listen(port);
+
+var routes = require('./controllers/routes.js');
+app.use('/',routes);
