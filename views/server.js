@@ -3,7 +3,7 @@ var bodyParser = require('body-parser');
 var methodOverride =require('method-override');
 var handleBars = require('express-handlebars');
 var app = express();
-app.use(express.static(_direname + '/public'));
+app.use(express.static(__direname + '/public'));
 
 app.use(bodyParser.urlencoded({
     extended: false
