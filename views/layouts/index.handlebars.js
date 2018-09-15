@@ -26,5 +26,16 @@
     {{/each}}
     </div>
     </div>
+
+<div class="col-cs-6 text-center" class="task">
+{{#each burger_data}}
+{{#if this.eaten}}
+<input class="form-control" type="text" placeholder=
+"{{this.id}}. {{this.burger_name}}" readonly>
+{{/if}}
+{{/each}}
+</input>
+</div>
+
     </div>
 </div>
