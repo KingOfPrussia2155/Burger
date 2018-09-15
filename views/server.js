@@ -10,3 +10,10 @@ app.use(bodyParser.urlencoded({
 }))
 
 app.use(methodOverride('_method'));
+app.engine('handlebars',handleBars({
+    defaultLayout: 'main'
+}));
+app.set('view engine', 'handlebars');
+
+var port = 8080;
+app.listen(port);
