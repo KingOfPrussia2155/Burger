@@ -39,3 +39,17 @@
 
     </div>
 </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 text-center enter_section">
+        <form action="/burgers/create" methods="POST">
+            <input type="text" name="burger_name" class="form-control"
+            value="" id="enter_text">
+            <button type="submit">ADD YOUR ORDER</button>
+                </input>
+            </form>
+            <p>What kind of burger would you like?</p>
+            </div>
+    </div>
+    </div>

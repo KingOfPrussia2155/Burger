@@ -13,5 +13,11 @@ router.put('/burgers/update',function(res,req){
         console.lot(result);
         res.redirect('/')
     });
+});
+
+router.post('/burgers/create', function(req,res){
+    burger.create(req.body.burger_name, function(resul){
+        res.redirect('/');
+    })
 })
 module.exports = router;
